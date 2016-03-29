@@ -4,7 +4,7 @@ If the template name exists in the child, the child bundle template is used.
 
 Else, The base theme will be used.
 
-The Child Theme can be dynamically passed in the in the service call.
+The Base theme is set in the service.yml while the Child is passed during the service call.
 
     src
     |-BaseThemeBundle/Resources/views/**.html.twig
