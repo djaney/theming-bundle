@@ -1,3 +1,19 @@
+
+# Installation
+
+    In composer.json
+
+    "require": {
+        "djaney/theming-bundle": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/djaney/theming-bundle"
+        }
+    ]
+
+# Usage
 ## Register the service
 
 Second argument is the name of the base theme
