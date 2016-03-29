@@ -1,3 +1,16 @@
+Creates a simple theming using a Child Theme and a Base Theme.
+
+If the template name exists in the child, the child bundle template is used.
+
+Else, The base theme will be used.
+
+The Child Theme can be dynamically passed in the in the service call.
+
+    src
+    |-BaseThemeBundle/Resources/views/**.html.twig
+    |-ChildThemeBundle/Resources/views/**.html.twig
+
+A Theme is simply a bundle with views.
 
 # Installation
 
