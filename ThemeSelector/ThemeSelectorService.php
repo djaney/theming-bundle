@@ -1,10 +1,10 @@
 <?php namespace Djaney\ThemingBundle\ThemeSelector;
 use Symfony\Component\HttpFoundation\Response;
 class ThemeSelectorService{
-    protected $twig;
+    protected $templating;
     protected $baseTheme;
-    public function __construct($twig, $baseTheme){
-        $this->twig = $twig;
+    public function __construct($templating, $baseTheme){
+        $this->templating = $templating;
         $this->baseTheme = $baseTheme;
     }
 
@@ -16,10 +16,12 @@ class ThemeSelectorService{
      * @return string            [description]
      */
     public function template($template, $themeName = null, $data= []){
-        if($themeName==null){
+        if($themeName===null){
+            $themeName = $this->baseTheme;
+        }else if(!$this->templating->exists($themeName.'::'.$template)){
             $themeName = $this->baseTheme;
         }
-        $html = $this->twig->render($themeName.'::'.$template, $data);
+        $html = $this->templating->render($themeName.'::'.$template, $data);
         $response = new Response($html);
         return $response;
     }
