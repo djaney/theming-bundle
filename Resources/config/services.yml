@@ -1,0 +1,4 @@
+services:
+   # djaney_theming:
+   #     class: Djaney\ThemingBundle\ThemeSelector\ThemeSelectorService
+   #     arguments: [ "@twig" ,  ]

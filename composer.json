@@ -1,0 +1,19 @@
+{
+    "name": "djaney/theming-bundle",
+    "description": "A service to that lets you choose the theme bundle to use",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Djane Rey Mabelin",
+            "email": "thedjaney@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "3.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Djaney\\ThemingBundle\\": ""
+        }
+    }
+}
