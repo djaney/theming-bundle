@@ -28,7 +28,7 @@ Second argument is the name of the base theme
     services:
         theme:
             class: Djaney\ThemingBundle\ThemeSelector\ThemeSelectorService
-            arguments: [ "@twig" , DjaneyThemingBundle ]
+            arguments: [ "@twig" , BaseThemeBundle ]
 
 ## Use in Controller
 
