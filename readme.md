@@ -5,13 +5,7 @@
 
     "require": {
         "djaney/theming-bundle": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/djaney/theming-bundle"
-        }
-    ]
+    }
 
 # Usage
 ## Register the service
