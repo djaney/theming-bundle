@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "3.0.*"
+        "symfony/symfony": "^2.8"
     },
     "autoload": {
         "psr-4": {
